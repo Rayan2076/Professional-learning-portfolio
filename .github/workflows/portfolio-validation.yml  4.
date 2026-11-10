@@ -1,0 +1,19 @@
+name: Portfolio Validation
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Confirm README exists
+        run: test -f README.md
+
+      - name: Display completion message
+        run: echo "Portfolio repository validation completed successfully."
