@@ -1,0 +1,3 @@
+GitHub Essentials practical activity
+
+This file demonstrates creating a branch, committing a change, opening a pull request and merging the change into the main branch.
